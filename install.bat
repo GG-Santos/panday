@@ -33,7 +33,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-uv tool install --editable "%PANDAY_HOME%\cli"
+uv tool install --editable --force "%PANDAY_HOME%\cli"
 if errorlevel 1 exit /b 1
 panday init
 
