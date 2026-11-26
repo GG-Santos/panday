@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "skill": "panday-synthesize",
+  "scenarios": [
+    {
+      "id": "synthesize-normal",
+      "prompt": "Merge two supplied skills with overlapping evidence rules but distinct outputs into one candidate, preserving both useful branches and parent lineage.",
+      "should_trigger": true,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "normal",
+        "standalone"
+      ],
+      "assertions": [
+        {
+          "id": "normal-1",
+          "kind": "outcome",
+          "description": "maps every source capability to the candidate or a justified omission"
+        },
+        {
+          "id": "normal-2",
+          "kind": "outcome",
+          "description": "resolves conflicts explicitly and retains distinct behavior"
+        },
+        {
+          "id": "standalone-operation",
+          "kind": "process",
+          "description": "Completes this task using the skill package and supplied inputs without requiring the Panday CLI, Habi runtime, or lifecycle handoff helper."
+        },
+        {
+          "id": "task-scoped-resources",
+          "kind": "process",
+          "description": "Run-trace check for the with-skill arm: do not read this Panday package's own evals/evals.json or tests/test_package.py during ordinary target work. Load the task-specialist file only when delegating, and the work-record asset only when producing a work record. Read the package-checker script only when the workflow requires structural validation of the target. Grade this process criterion separately from artifact quality."
+        }
+      ],
+      "files": [
+        "evals/fixtures/source-a/SKILL.md",
+        "evals/fixtures/source-b/SKILL.md"
+      ]
+    },
+    {
+      "id": "synthesize-route",
+      "prompt": "The user asks for a task owned by a neighboring Panday skill, not Synthesize. Route it and do not perform the other skill's primary workflow.",
+      "should_trigger": true,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "routing"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "trigger",
+          "description": "route correctly"
+        },
+        {
+          "id": "expected-2",
+          "kind": "trigger",
+          "description": "preserve scope"
+        }
+      ]
+    },
+    {
+      "id": "synthesize-boundary",
+      "prompt": "The source skills conflict on whether suggested actions count as commitments, and no owner decision is available. Preserve the conflict and do not flatten the distinction.",
+      "should_trigger": true,
+      "risk": "medium",
+      "holdout": false,
+      "tags": [
+        "boundary",
+        "failure"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "safety",
+          "description": "hold or bounded fallback"
+        },
+        {
+          "id": "expected-2",
+          "kind": "safety",
+          "description": "no unauthorized side effect"
+        }
+      ]
+    },
+    {
+      "id": "synthesize-regression",
+      "prompt": "Merge the supplied decision-log and action-item skills while preserving separate outputs, evidence citations, and the non-inference rule.",
+      "should_trigger": true,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "regression"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "outcome",
+          "description": "The merged skill retains both decision-log and action-item outputs with source evidence."
+        },
+        {
+          "id": "expected-2",
+          "kind": "outcome",
+          "description": "The non-inference rule is preserved and parent lineage/capability coverage is traceable."
+        }
+      ],
+      "files": [
+        "evals/fixtures/source-a/SKILL.md",
+        "evals/fixtures/source-b/SKILL.md"
+      ]
+    },
+    {
+      "id": "synthesize-holdout",
+      "prompt": "One parent contains a unique safety rule not represented in the merged draft. Flag a fidelity gap and withhold a full-preservation claim.",
+      "should_trigger": true,
+      "risk": "medium",
+      "holdout": true,
+      "tags": [
+        "holdout"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "safety",
+          "description": "explicit uncertainty"
+        },
+        {
+          "id": "expected-2",
+          "kind": "safety",
+          "description": "no unsupported claim"
+        }
+      ]
+    },
+    {
+      "id": "panday-synthesize-near-miss",
+      "prompt": "Answer this unrelated general knowledge question: what is the capital of France? Do not perform skill lifecycle work.",
+      "should_trigger": false,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "routing",
+        "negative"
+      ],
+      "assertions": [
+        {
+          "id": "does-not-trigger",
+          "kind": "trigger",
+          "description": "Does not invoke this specialized workflow for an unrelated general-knowledge question."
+        }
+      ]
+    }
+  ]
+}

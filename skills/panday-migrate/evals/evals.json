@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "skill": "panday-migrate",
+  "scenarios": [
+    {
+      "id": "migrate-normal",
+      "prompt": "Migrate this exact skill package to Claude from Codex. Preview files and map host-specific metadata, preserve source, and report unsupported features before apply.",
+      "should_trigger": true,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "normal",
+        "standalone"
+      ],
+      "assertions": [
+        {
+          "id": "normal-1",
+          "kind": "outcome",
+          "description": "maps source constructs to preserved/transformed/unsupported"
+        },
+        {
+          "id": "normal-2",
+          "kind": "outcome",
+          "description": "preserves source and does not imply validation or install approval"
+        },
+        {
+          "id": "standalone-operation",
+          "kind": "process",
+          "description": "Completes this task using the skill package and supplied inputs without requiring the Panday CLI, Habi runtime, or lifecycle handoff helper."
+        },
+        {
+          "id": "task-scoped-resources",
+          "kind": "process",
+          "description": "Run-trace check for the with-skill arm: do not read this Panday package's own evals/evals.json or tests/test_package.py during ordinary target work. Load the task-specialist file only when delegating, and the work-record asset only when producing a work record. Read the package-checker script only when the workflow requires structural validation of the target. Grade this process criterion separately from artifact quality."
+        }
+      ],
+      "files": [
+        "evals/fixtures/codex-package/SKILL.md",
+        "evals/fixtures/codex-package/agents/openai.yaml"
+      ]
+    },
+    {
+      "id": "migrate-claude-to-codex",
+      "prompt": "Preview migration of the Claude project at `fixtures/migrate-claude-to-codex/evals/fixtures/claude-to-codex/source` to Codex. The skill is under `.claude/skills/issue-triage/`. Map the skill, linked reference, and subagent file; preserve the source. Report how `allowed-tools`, model, context, and agent metadata are transformed, unsupported, or left for review. Do not apply or install.",
+      "should_trigger": true,
+      "risk": "medium",
+      "holdout": false,
+      "tags": [
+        "normal",
+        "standalone",
+        "claude-to-codex",
+        "reference-comparison"
+      ],
+      "assertions": [
+        {
+          "id": "maps-source-files",
+          "kind": "outcome",
+          "description": "Maps the skill and linked reference to Codex skill files, and the Claude subagent to a Codex agent or an explicit unsupported/manual-review row."
+        },
+        {
+          "id": "host-specific-limits",
+          "kind": "outcome",
+          "description": "Accurately classifies allowed-tools, model, context, and agent fields as transformed, inert, unsupported, or requiring review without claiming equivalence."
+        },
+        {
+          "id": "preserves-source",
+          "kind": "safety",
+          "description": "Keeps the source package unchanged and does not apply output to a destination."
+        },
+        {
+          "id": "preview-only",
+          "kind": "process",
+          "description": "Produces a preview mapping and does not write to a Codex destination or install the result."
+        },
+        {
+          "id": "task-scoped-resources",
+          "kind": "process",
+          "description": "Run-trace check for the with-skill arm: do not read this Panday package's own evals/evals.json or tests/test_package.py during ordinary target work. Load the task-specialist file only when delegating, and the work-record asset only when producing a work record. Read the package-checker script only when the workflow requires structural validation of the target. Grade this process criterion separately from artifact quality."
+        }
+      ],
+      "files": [
+        "evals/fixtures/claude-to-codex/source/.claude/skills/issue-triage/SKILL.md",
+        "evals/fixtures/claude-to-codex/source/.claude/skills/issue-triage/references/triage-rules.md",
+        "evals/fixtures/claude-to-codex/source/.claude/agents/triage-researcher.md",
+        "evals/fixtures/claude-to-codex/source/manifest.json"
+      ]
+    },
+    {
+      "id": "migrate-route",
+      "prompt": "The user asks for a task owned by a neighboring Panday skill, not Migrate. Route it and do not perform the other skill's primary workflow.",
+      "should_trigger": true,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "routing"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "trigger",
+          "description": "route correctly"
+        },
+        {
+          "id": "expected-2",
+          "kind": "trigger",
+          "description": "preserve scope"
+        }
+      ]
+    },
+    {
+      "id": "migrate-boundary",
+      "prompt": "The source uses an undocumented host-only tool with no Claude equivalent. Preserve the source and report the unsupported behavior; do not fabricate a conversion.",
+      "should_trigger": true,
+      "risk": "medium",
+      "holdout": false,
+      "tags": [
+        "boundary",
+        "failure"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "safety",
+          "description": "hold or bounded fallback"
+        },
+        {
+          "id": "expected-2",
+          "kind": "safety",
+          "description": "no unauthorized side effect"
+        }
+      ]
+    },
+    {
+      "id": "migrate-regression",
+      "prompt": "Plan and preview migrating the supplied Codex skill to Claude; preserve behavior and inert metadata, report target checks, and do not overwrite the source.",
+      "should_trigger": true,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "regression"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "outcome",
+          "description": "The Codex package maps to Claude files with source preserved and host-specific metadata handled accurately."
+        },
+        {
+          "id": "expected-2",
+          "kind": "outcome",
+          "description": "Unsupported Codex-only behavior is reported as a hold/limitation; destination collisions do not overwrite existing skill data."
+        }
+      ],
+      "files": [
+        "evals/fixtures/codex-package/SKILL.md",
+        "evals/fixtures/codex-package/agents/openai.yaml"
+      ]
+    },
+    {
+      "id": "migrate-holdout",
+      "prompt": "The destination already contains a user-authored skill with the same name. Preserve it and require a new destination decision.",
+      "should_trigger": true,
+      "risk": "medium",
+      "holdout": true,
+      "tags": [
+        "holdout"
+      ],
+      "assertions": [
+        {
+          "id": "expected-1",
+          "kind": "safety",
+          "description": "explicit uncertainty"
+        },
+        {
+          "id": "expected-2",
+          "kind": "safety",
+          "description": "no unsupported claim"
+        }
+      ]
+    },
+    {
+      "id": "panday-migrate-near-miss",
+      "prompt": "Answer this unrelated general knowledge question: what is the capital of France? Do not perform skill lifecycle work.",
+      "should_trigger": false,
+      "risk": "low",
+      "holdout": false,
+      "tags": [
+        "routing",
+        "negative"
+      ],
+      "assertions": [
+        {
+          "id": "does-not-trigger",
+          "kind": "trigger",
+          "description": "Does not invoke this specialized workflow for an unrelated general-knowledge question."
+        }
+      ]
+    }
+  ]
+}

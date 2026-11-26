@@ -1,0 +1,3 @@
+{"scenario_id":"summarize-incident","variant":"baseline","run_id":"one","passed":true,"score":0.75,"duration_seconds":35,"tokens":4200,"handoffs":3,"safety_passed":true,"out_of_target_routed":true}
+{"scenario_id":"summarize-incident","variant":"baseline","run_id":"two","passed":true,"score":0.75,"duration_seconds":38,"tokens":4500,"handoffs":4,"safety_passed":true,"out_of_target_routed":true}
+{"scenario_id":"summarize-incident","variant":"baseline","run_id":"three","passed":false,"score":0.5,"duration_seconds":52,"tokens":6100,"handoffs":3,"safety_passed":true,"out_of_target_routed":true}

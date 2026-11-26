@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "source": "https://github.com/winmetta/agent-skills",
+  "resolved_skill": "dependency-updates",
+  "fingerprint": "2d5aa579bf5cabe8a59fb3bbea714fc4c3cd6f821cdd4014bd9aa0a6e5087f93",
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 237
+    },
+    {
+      "path": "assets/dependabot.yml",
+      "bytes": 1057
+    },
+    {
+      "path": "assets/version-check.json",
+      "bytes": 538
+    },
+    {
+      "path": "assets/version-check.yml",
+      "bytes": 1888
+    },
+    {
+      "path": "references/dependabot.md",
+      "bytes": 4342
+    },
+    {
+      "path": "scripts/check-versions.mjs",
+      "bytes": 9984
+    },
+    {
+      "path": "scripts/check-versions.test.mjs",
+      "bytes": 7375
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8307
+    }
+  ],
+  "local_link_findings": [],
+  "executed_candidate_code": false
+}

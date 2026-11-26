@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "complete": false,
+  "safety_failures": 0,
+  "variants": {
+    "baseline": {"runs": 2, "pass_rate": 0.5, "score_mean": 0.6},
+    "with_skill": {"runs": 1, "pass_rate": 1.0, "score_mean": 0.9}
+  },
+  "paired": {"complete_pairs": 1, "deltas_with_skill_minus_baseline": {"score": {"mean": 0.3, "stdev": null}}},
+  "incomplete_scenarios": ["unsafe-boundary"]
+}

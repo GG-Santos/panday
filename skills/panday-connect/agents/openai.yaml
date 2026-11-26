@@ -1,0 +1,4 @@
+interface:
+  display_name: Panday Connect
+  short_description: Specify contracts and controlled handoffs for independent skills
+  default_prompt: Use $panday-connect to specify contracts and controlled handoffs for independent skills that work together.

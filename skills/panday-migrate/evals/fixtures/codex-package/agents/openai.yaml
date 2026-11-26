@@ -1,0 +1,4 @@
+interface:
+  display_name: Release Notes
+  short_description: Draft release notes from supplied merged changes
+  default_prompt: Use $release-notes to draft release notes from the supplied changes.

@@ -1,0 +1,10 @@
+{
+  "schema": "panday-discovery-source-retrieval-attempt/v1",
+  "source": "https://github.com/whatifwedigdeeper/agent-skills",
+  "skill": "uv-deps",
+  "operation": "read-only package inspection",
+  "ok": false,
+  "error": "GitHub archive contains a symbolic link",
+  "candidate_code_executed": false,
+  "interpretation": "Repository archive retrieval was held before package inspection. This does not establish that the selected skill itself is unsafe or malicious; package-level review remains incomplete."
+}

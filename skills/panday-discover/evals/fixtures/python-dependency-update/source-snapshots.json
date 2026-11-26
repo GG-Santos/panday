@@ -1,0 +1,29 @@
+{
+  "schema": "panday-discover-source-snapshots/v1",
+  "search_query": "Python dependency updates",
+  "captured_on": "2026-11-25",
+  "sources": [
+    {
+      "name": "uv-deps",
+      "repo": "whatifwedigdeeper/agent-skills",
+      "commit": "b3e7b02b0bef6383e85f7ae3657631b70be074a1",
+      "path": "skills/uv-deps/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/whatifwedigdeeper/agent-skills/b3e7b02b0bef6383e85f7ae3657631b70be074a1/skills/uv-deps/SKILL.md",
+      "sha256": "e1db96fd81c52672c18435df577f8e2936e8fbfe06b3b210b2317e11205f0abd",
+      "bytes": 10479,
+      "license": "MIT",
+      "archive_review_result": "panday inspect failed closed on repository-wide symbolic link"
+    },
+    {
+      "name": "dependency-updates",
+      "repo": "winmetta/agent-skills",
+      "commit": "e6eaf7e1b4e9131137a70112e89cedea6b01e9e5",
+      "path": "skills/dependency-updates/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/winmetta/agent-skills/e6eaf7e1b4e9131137a70112e89cedea6b01e9e5/skills/dependency-updates/SKILL.md",
+      "sha256": "da966be0cb299e47ce708bca076b57facf2c8fd3f8bfede85f8ea866e4908506",
+      "bytes": 8307,
+      "license": "MIT",
+      "archive_review_result": "Panday inspect succeeded; exact package fingerprint is separately retained in inspection.json"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "count": 12,
+  "all_passed": true,
+  "results": [
+    {
+      "skill": "panday-augment",
+      "passed_strict_validation": true,
+      "archive_sha256": "8666855f19dcbf6cf82ae7ddeba188751a89bcb7a25c9959caf67ce33384d7c8",
+      "archive_bytes": 9490,
+      "files": 14,
+      "unpacked_bytes": 16748
+    },
+    {
+      "skill": "panday-card",
+      "passed_strict_validation": true,
+      "archive_sha256": "be5e721794f1e39d7b043f9c7268ca89eca1aa761c7f749ad1dec19789659784",
+      "archive_bytes": 11289,
+      "files": 14,
+      "unpacked_bytes": 21226
+    },
+    {
+      "skill": "panday-connect",
+      "passed_strict_validation": true,
+      "archive_sha256": "ef55fd3089d03987b6c32083c4dbd5693e1343171d08d4a14d6ba418c31ed80f",
+      "archive_bytes": 8191,
+      "files": 13,
+      "unpacked_bytes": 14436
+    },
+    {
+      "skill": "panday-create",
+      "passed_strict_validation": true,
+      "archive_sha256": "2e6fcc488b8e75136b172a49e9685e188cfa2857c4e8ea62eb64225a3ff0133e",
+      "archive_bytes": 16749,
+      "files": 13,
+      "unpacked_bytes": 41904
+    },
+    {
+      "skill": "panday-discover",
+      "passed_strict_validation": true,
+      "archive_sha256": "3dfd197f64bffd08e5562dfb9d3d7fde3bd33b4836992e41a1c64df74e811922",
+      "archive_bytes": 45528,
+      "files": 29,
+      "unpacked_bytes": 100835
+    },
+    {
+      "skill": "panday-evaluate",
+      "passed_strict_validation": true,
+      "archive_sha256": "32ddb6421aafd42d5cd87487bc3bcd0262a4ffafa71d84b7e7ea1cde2b747a24",
+      "archive_bytes": 15130,
+      "files": 15,
+      "unpacked_bytes": 30176
+    },
+    {
+      "skill": "panday-fix",
+      "passed_strict_validation": true,
+      "archive_sha256": "ab0342d13f5dae0101a41ea6c4f0e7d046fccf45df44084a23b32f3ff5825b0f",
+      "archive_bytes": 9327,
+      "files": 12,
+      "unpacked_bytes": 18151
+    },
+    {
+      "skill": "panday-inspect",
+      "passed_strict_validation": true,
+      "archive_sha256": "0c8a56f93fcdfa2cce52f998a00e22c86a5f5bf3f0d40375ab4f728a167a5a70",
+      "archive_bytes": 11335,
+      "files": 14,
+      "unpacked_bytes": 20915
+    },
+    {
+      "skill": "panday-install",
+      "passed_strict_validation": true,
+      "archive_sha256": "96746f4513390063aa9746502cae84dafa052fee16f3d78b2c927f62cba11420",
+      "archive_bytes": 13850,
+      "files": 23,
+      "unpacked_bytes": 22219
+    },
+    {
+      "skill": "panday-migrate",
+      "passed_strict_validation": true,
+      "archive_sha256": "e35fd1251971c51d0a70d48daf9a4bdba48f8a24784354ddbb9356df02c898b7",
+      "archive_bytes": 12207,
+      "files": 17,
+      "unpacked_bytes": 23090
+    },
+    {
+      "skill": "panday-optimize",
+      "passed_strict_validation": true,
+      "archive_sha256": "8ad0c91cbb265fd81523e10c4b6f7aa403acc9ebf41db98f8713872c6256b1c4",
+      "archive_bytes": 10338,
+      "files": 14,
+      "unpacked_bytes": 20151
+    },
+    {
+      "skill": "panday-synthesize",
+      "passed_strict_validation": true,
+      "archive_sha256": "35bcbb6002d539801aca6de028bea44fe0569c1048c7bb3700157824e4772b35",
+      "archive_bytes": 8578,
+      "files": 13,
+      "unpacked_bytes": 15043
+    }
+  ]
+}

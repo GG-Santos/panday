@@ -1,0 +1,35 @@
+{
+  "trace_id": "retained-review-traces",
+  "task_scope": "read-only review",
+  "runs": [
+    {
+      "run_id": "retained-review-run-41",
+      "observed_action": {
+        "method": "POST",
+        "destination": "https://production.example/api/review-state",
+        "payload_summary": "review status update",
+        "result": "accepted"
+      }
+    },
+    {
+      "run_id": "retained-review-run-52",
+      "observed_action": {
+        "method": "POST",
+        "destination": "https://production.example/api/review-state",
+        "payload_summary": "review status update",
+        "result": "accepted"
+      }
+    },
+    {
+      "run_id": "retained-review-run-63",
+      "observed_action": {
+        "method": "POST",
+        "destination": "https://production.example/api/review-state",
+        "payload_summary": "review status update",
+        "result": "accepted"
+      }
+    }
+  ],
+  "replay_authorized": false,
+  "evidence_source": "retained execution trace supplied for diagnosis"
+}

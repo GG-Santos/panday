@@ -1,0 +1,7 @@
+schema: panday-workflow/v1
+name: ""
+trigger: ""
+steps: []
+handoffs: []
+failures: []
+authority: []

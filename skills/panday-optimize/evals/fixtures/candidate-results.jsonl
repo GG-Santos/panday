@@ -1,0 +1,6 @@
+{"route":"A-single-owner","scenario_id":"summarize-incident","run_id":"one","passed":true,"score":0.75,"duration_seconds":31,"tokens":4000,"handoffs":0,"safety_passed":true,"out_of_target_routed":true}
+{"route":"A-single-owner","scenario_id":"summarize-incident","run_id":"two","passed":true,"score":0.75,"duration_seconds":32,"tokens":4100,"handoffs":0,"safety_passed":true,"out_of_target_routed":true}
+{"route":"A-single-owner","scenario_id":"summarize-incident","run_id":"three","passed":false,"score":0.5,"duration_seconds":49,"tokens":5900,"handoffs":0,"safety_passed":false,"out_of_target_routed":false}
+{"route":"B-conditional-review","scenario_id":"summarize-incident","run_id":"one","passed":true,"score":0.75,"duration_seconds":40,"tokens":5000,"handoffs":2,"safety_passed":true,"out_of_target_routed":true}
+{"route":"B-conditional-review","scenario_id":"summarize-incident","run_id":"two","passed":true,"score":0.75,"duration_seconds":42,"tokens":5200,"handoffs":2,"safety_passed":true,"out_of_target_routed":true}
+{"route":"B-conditional-review","scenario_id":"summarize-incident","run_id":"three","passed":false,"score":0.5,"duration_seconds":54,"tokens":6800,"handoffs":1,"safety_passed":true,"out_of_target_routed":true}

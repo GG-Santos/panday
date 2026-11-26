@@ -1,0 +1,4 @@
+interface:
+  display_name: Panday Evaluate
+  short_description: Design and interpret skill evals and benchmarks; validate
+  default_prompt: Use $panday-evaluate to design and interpret skill evals and benchmarks; validate configurations and apply declared CI gates without conflating security review.

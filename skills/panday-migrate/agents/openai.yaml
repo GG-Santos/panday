@@ -1,0 +1,4 @@
+interface:
+  display_name: Panday Migrate
+  short_description: Convert a skill package between provider formats while
+  default_prompt: Use $panday-migrate to convert a skill package between provider formats while preserving source, behavior, authority boundaries, and unsupported-feature reports.

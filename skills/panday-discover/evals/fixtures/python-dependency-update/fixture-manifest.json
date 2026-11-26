@@ -1,0 +1,91 @@
+{
+  "schema": "panday-discovery-fixture-manifest/v1",
+  "captured_on": "2026-11-25",
+  "files": [
+    {
+      "path": "candidates/dependency-updates/SKILL.md",
+      "sha256": "da966be0cb299e47ce708bca076b57facf2c8fd3f8bfede85f8ea866e4908506",
+      "bytes": 8307
+    },
+    {
+      "path": "candidates/dependency-updates/assets/dependabot.yml",
+      "sha256": "7b702cb232d2cdddbb5912cd334ad57ea3ad9958ae839a39912b9c5f5bfdbbd3",
+      "bytes": 1057
+    },
+    {
+      "path": "candidates/dependency-updates/assets/version-check.json",
+      "sha256": "ab4ef97b04827c215279883eb9888587fad43dd44c1fc293a12a08b9c1843818",
+      "bytes": 538
+    },
+    {
+      "path": "candidates/dependency-updates/assets/version-check.yml",
+      "sha256": "a2c9e77d13674cbdbc528a2768a25389637b5f7d12ec14e5658a71a3348d9592",
+      "bytes": 1888
+    },
+    {
+      "path": "candidates/dependency-updates/references/dependabot.md",
+      "sha256": "00eebaaaa8e60d00e2df26097ae52dc20a55ba0e02bedfb142983cf7a922effe",
+      "bytes": 4342
+    },
+    {
+      "path": "candidates/dependency-updates/scripts/check-versions.mjs",
+      "sha256": "716c290aa799e3e55c3e9c556641e01ae6b19bcf3f6697159827e2b8a2923a00",
+      "bytes": 9984
+    },
+    {
+      "path": "candidates/uv-deps/SKILL.md",
+      "sha256": "e1db96fd81c52672c18435df577f8e2936e8fbfe06b3b210b2317e11205f0abd",
+      "bytes": 10479
+    },
+    {
+      "path": "candidates/uv-deps/references/audit-workflow.md",
+      "sha256": "e3c910e95f391ac27ada1b746d62b7e368145ac7d0d5309898a369bdad89bce3",
+      "bytes": 12417
+    },
+    {
+      "path": "candidates/uv-deps/references/interactive-help.md",
+      "sha256": "dea126ee98032c3a4adbafc45fecec1d68e9d035f73510286571fc4502d772b0",
+      "bytes": 3866
+    },
+    {
+      "path": "candidates/uv-deps/references/update-workflow.md",
+      "sha256": "87677394d1ea0574d18e29bfab96a7ceac5f27dc1a1f3fba1439a74c12d8f731",
+      "bytes": 7803
+    },
+    {
+      "path": "candidates/uv-deps/references/uv-commands.md",
+      "sha256": "e9e15dca21ff811d39bbb2567070cbeb23b046c3abb9f07d422440ce34efa00a",
+      "bytes": 3829
+    },
+    {
+      "path": "capture-metadata.json",
+      "sha256": "5cc8538b7c42c9a1f1eee9f537bbe01fe7a49fb1e438583dd55789b12c22560c",
+      "bytes": 936
+    },
+    {
+      "path": "catalog-results.json",
+      "sha256": "bdb61b4e97693360c981c125c905e6cfcc0ad6e6325faa79098fc37698fbea0c",
+      "bytes": 4927
+    },
+    {
+      "path": "source-review-dependency-updates/inspection.json",
+      "sha256": "9c7e0f2c8933f0fb4f0a9620bae2fae9931c3ae08ef57a42f56e61a9f19a3763",
+      "bytes": 907
+    },
+    {
+      "path": "source-snapshots.json",
+      "sha256": "8e98fab8d41dea789e2b76dfce2f50b984d006d64494d19a7e03361b6a233b60",
+      "bytes": 1350
+    },
+    {
+      "path": "task-context.md",
+      "sha256": "77e89f27129ee0cb609f6d5abe0938421727eafe7bf36f2e4ceb5bb399295f60",
+      "bytes": 1241
+    },
+    {
+      "path": "uv-deps-inspection-attempt.json",
+      "sha256": "198c474d860aedf49db5b25a227162f4aaa33e971036ea8d640af1d98156e47b",
+      "bytes": 510
+    }
+  ]
+}

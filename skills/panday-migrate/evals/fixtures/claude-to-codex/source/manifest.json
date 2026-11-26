@@ -1,0 +1,11 @@
+{
+  "source_provider": "Claude",
+  "source_revision": "fixture-v1",
+  "source_files": [
+    ".claude/skills/issue-triage/SKILL.md",
+    ".claude/skills/issue-triage/references/triage-rules.md",
+    ".claude/agents/triage-researcher.md"
+  ],
+  "requested_target": "Codex",
+  "mode": "preview-only"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "panday-discovery-capture/v1",
+  "captured_on": "2026-11-25",
+  "command": "panday --json skills search \"Python dependency updates\"",
+  "result_source_status": "live experimental skills.sh results; endpoint is undocumented and may change",
+  "limitations": [
+    "The catalog may omit valid candidates and can change over time.",
+    "Install counts are discovery signals only, not quality or safety evidence.",
+    "Both frozen source snapshots now include the exact SKILL.md and all locally linked workflow resources resolved at the pinned commits; unrelated package files are not included.",
+    "The uv-deps repository inspection failed closed because the repository archive contained a symbolic link; this is an archive retrieval limitation and does not itself establish that uv-deps is malicious.",
+    "Snapshots and inspection records do not establish host compatibility or runtime behavior."
+  ]
+}

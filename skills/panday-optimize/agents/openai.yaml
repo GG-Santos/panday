@@ -1,0 +1,4 @@
+interface:
+  display_name: Panday Optimize
+  short_description: Improve the route for a specific task using a comparable
+  default_prompt: Use $panday-optimize to improve the route for a specific task using a comparable baseline, matched trials, and explicit regression floors.

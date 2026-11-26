@@ -1,0 +1,4 @@
+interface:
+  display_name: Panday Inspect
+  short_description: Review exact skill files and dependencies for safety, trust,
+  default_prompt: Use $panday-inspect to review exact skill files and dependencies for safety, trust, installability, permissions, and source-aware semantic risks without execution.

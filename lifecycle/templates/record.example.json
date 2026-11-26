@@ -1,0 +1,39 @@
+{
+  "schema": "habi-skill-lifecycle/v1",
+  "record_id": "create-example-001",
+  "record_type": "create",
+  "created_at": "2026-11-23T00:00:00Z",
+  "subject": {
+    "name": "example-skill",
+    "source_path": ".agents/skills/example-skill",
+    "fingerprint": {
+      "algorithm": "sha256-tree-v1",
+      "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "file_count": 1,
+      "byte_count": 1
+    }
+  },
+  "scope": {
+    "project": "example-project",
+    "purpose": "Illustrate a candidate creation handoff",
+    "authority": "Authoring only; no installation or release authority",
+    "consumers": ["habi-inspect-skill"]
+  },
+  "claims": [
+    {
+      "claim_id": "candidate-defined",
+      "status": "observed",
+      "method": "Review of the created candidate",
+      "evidence": [{"source": "SKILL.md", "locator": "# Workflow", "description": "Candidate instructions and boundaries are present"}],
+      "coverage": "Candidate source only",
+      "limitations": ["No inspection or behavior evaluation has run"]
+    }
+  ],
+  "findings": [],
+  "lineage": {"predecessor_record_ids": [], "parent_digest": null},
+  "handoff": {"to": "inspect", "status": "ready", "blockers": [], "next_action": "Inspect these exact candidate bytes"},
+  "metadata": {
+    "illustrative_only": true,
+    "planned_cases": ["ordinary positive", "near miss", "authority boundary"]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: Panday Card
+  short_description: Render a source-linked skill governance card from evidence while
+  default_prompt: Use $panday-card to render a source-linked skill governance card from evidence while preserving uncertainty and owner decisions.

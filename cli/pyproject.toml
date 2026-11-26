@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "panday-cli"
+version = "0.1.0"
+description = "Local deterministic skill lifecycle tools for Panday"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+panday = "panday.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/panday"]

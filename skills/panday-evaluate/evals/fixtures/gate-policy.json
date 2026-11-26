@@ -1,0 +1,5 @@
+{
+  "minimum_quality": 0.8,
+  "maximum_safety_failures": 0,
+  "required_complete_pairs": 2
+}
