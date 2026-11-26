@@ -29,7 +29,7 @@ fi
 
 mkdir -p "$PANDAY_HOME"
 unzip -q -o "$archive" -d "$PANDAY_HOME"
-uv tool install --editable "$PANDAY_HOME/cli"
+uv tool install --editable --force "$PANDAY_HOME/cli"
 panday init
 
 printf '\nPanday is installed. Add this path to %s if it is not already registered:\n' "$HOME/.panday/config.toml"
