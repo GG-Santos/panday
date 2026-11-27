@@ -74,16 +74,16 @@ curl -fsSL https://raw.githubusercontent.com/GG-Santos/panday/main/install.sh | 
 ```
 
 The installers require [`uv`](https://docs.astral.sh/uv/). They download the
-fingerprintable package archive from the latest GitHub Release into a
+package archive from the pinned v1.1.1 GitHub Release into a
 persistent Panday home and install the CLI as an editable `uv` tool. Set these
 environment variables to customize the defaults:
 
 ```text
 PANDAY_REPO       GitHub owner/repository (default: GG-Santos/panday)
-PANDAY_VERSION    GitHub release tag (default: v1.1.0)
-PANDAY_ARCHIVE    release asset filename (default: panday-v1.1.0.zip)
+PANDAY_VERSION    GitHub release tag (default: v1.1.1)
+PANDAY_ARCHIVE    release asset filename (default: panday-<tag>.zip)
 PANDAY_HOME       extraction/install location
-PANDAY_URL        complete archive URL override
+PANDAY_URL        complete archive URL override (POSIX installer only)
 ```
 
 Verify the installation:
@@ -162,7 +162,7 @@ held or incomplete evidence cannot silently become install authorization.
 skills/       12 canonical panday-* skill packages
 cli/          Python standard-library CLI, tests, and command reference
 lifecycle/    v1/v2 schemas, validators, templates, and lifecycle tests
-release/      strict-validated .skill archives and validation summary
+release/      validation summary; packaged .skill archives in release ZIP
 docs/         implementation specification and acceptance evidence
 assets/       architecture visual used by this README
 ```
@@ -170,7 +170,12 @@ assets/       architecture visual used by this README
 Every skill package contains its own `SKILL.md`, agents, references, assets,
 scripts, evals, tests, and `.skillignore`. Each `assets/icon.svg` uses a 64×64
 rounded-square tile with a distinct glyph and an accessible name. The current
-system is documented in [the icon design plan](docs/2026-11-27-panday-icons-v2-design.md).
+system is documented in [the icon design plan](docs/2026-11-27-panday-icons-v3-design.md).
+
+Download [panday-v1.1.1.zip](https://github.com/GG-Santos/panday/releases/download/v1.1.1/panday-v1.1.1.zip)
+from the release. Its README, installers, source files, and all twelve icons
+match the release tag. The bundle version is v1.1.1; the unchanged CLI reports
+its own implementation version, 0.1.0.
 
 ## Trust and release model
 
