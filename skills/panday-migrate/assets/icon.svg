@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Migrate icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Migrate icon" focusable="false">
   <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
-  <path d="M9 18V17a8 8 0 0 1 8-8h1" fill="none" stroke="#ff9860" stroke-width="3" stroke-linecap="round"/>
-  <path d="M15 20h15v15H15zM34 30h15v15H34z" fill="none" stroke="#fff0e8" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="m29 22 9 0 0 8m0 0 6-6m-6 6-6-6" fill="none" stroke="#ff9860" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="none" stroke="#ff9860" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 17H16v30h9M39 17h9v30h-9M24 32h16m-7-7 7 7-7 7"/>
+  </g>
 </svg>

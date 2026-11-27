@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Discover icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Discover icon" focusable="false">
   <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
-  <path d="M9 18V17a8 8 0 0 1 8-8h1" fill="none" stroke="#3bd5e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="29" cy="29" r="13" fill="none" stroke="#e8f8ff" stroke-width="3.5"/>
-  <path d="m38.5 38.5 11 11" fill="none" stroke="#e8f8ff" stroke-width="4" stroke-linecap="round"/>
-  <path d="m29 21 3 8-8 3 3-8z" fill="#3bd5e8"/>
+  <g fill="none" stroke="#3bd5e8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="28" cy="28" r="11"/><path d="m36 36 11 11"/>
+  </g>
 </svg>
