@@ -80,8 +80,8 @@ environment variables to customize the defaults:
 
 ```text
 PANDAY_REPO       GitHub owner/repository (default: GG-Santos/panday)
-PANDAY_VERSION    GitHub release tag (default: v1.0.0)
-PANDAY_ARCHIVE    release asset filename (default: panday-finished-2026-11-27.zip)
+PANDAY_VERSION    GitHub release tag (default: v1.1.0)
+PANDAY_ARCHIVE    release asset filename (default: panday-v1.1.0.zip)
 PANDAY_HOME       extraction/install location
 PANDAY_URL        complete archive URL override
 ```

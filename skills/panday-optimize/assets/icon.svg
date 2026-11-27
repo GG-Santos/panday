@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Optimize icon"><circle cx="32" cy="32" r="27.5" fill="#0f172a" stroke="#4ade80" stroke-width="3"/><path d="M18 42h28M22 38l7-9 6 5 9-13" fill="none" stroke="#bbf7d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Optimize icon">
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
+  <path d="M9 18V17a8 8 0 0 1 8-8h1" fill="none" stroke="#55db74" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="17" cy="42" r="4" fill="#eaffee"/><circle cx="46" cy="21" r="4" fill="#eaffee"/>
+  <path d="M21 42h9c8 0 8-21 12-21" fill="none" stroke="#55db74" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="m23 36 8-9 8 1" fill="none" stroke="#eaffee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
