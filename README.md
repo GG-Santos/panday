@@ -168,10 +168,9 @@ assets/       architecture visual used by this README
 ```
 
 Every skill package contains its own `SKILL.md`, agents, references, assets,
-scripts, evals, tests, and `.skillignore`. The icon in each `assets/icon.svg`
-uses the same 64×64 dark-node design system so skill browsers can render a
-consistent catalog. The design decisions and 15-pass visual audit are recorded
-in [`docs/2026-11-27-panday-icon-refinement.md`](docs/2026-11-27-panday-icon-refinement.md).
+scripts, evals, tests, and `.skillignore`. Each `assets/icon.svg` uses a 64×64
+rounded-square tile with a distinct glyph and an accessible name. The current
+system is documented in [the icon design plan](docs/2026-11-27-panday-icons-v2-design.md).
 
 ## Trust and release model
 
