@@ -2,9 +2,10 @@
 set -eu
 
 PANDAY_REPO="${PANDAY_REPO:-GG-Santos/panday}"
-PANDAY_VERSION="${PANDAY_VERSION:-2026-11-27}"
+PANDAY_VERSION="${PANDAY_VERSION:-v1.0.0}"
+PANDAY_ARCHIVE="${PANDAY_ARCHIVE:-panday-finished-2026-11-27.zip}"
 PANDAY_HOME="${PANDAY_HOME:-${XDG_DATA_HOME:-$HOME/.local/share}/panday}"
-URL="${PANDAY_URL:-https://raw.githubusercontent.com/${PANDAY_REPO}/main/panday-finished-${PANDAY_VERSION}.zip}"
+URL="${PANDAY_URL:-https://github.com/${PANDAY_REPO}/releases/download/${PANDAY_VERSION}/${PANDAY_ARCHIVE}}"
 
 command -v uv >/dev/null 2>&1 || {
   printf '%s\n' 'uv is required. Install it from https://docs.astral.sh/uv/getting-started/installation/' >&2

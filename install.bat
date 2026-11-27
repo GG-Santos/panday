@@ -4,7 +4,9 @@ setlocal EnableExtensions
 set "PANDAY_REPO=%PANDAY_REPO%"
 if not defined PANDAY_REPO set "PANDAY_REPO=GG-Santos/panday"
 set "PANDAY_VERSION=%PANDAY_VERSION%"
-if not defined PANDAY_VERSION set "PANDAY_VERSION=2026-11-27"
+if not defined PANDAY_VERSION set "PANDAY_VERSION=v1.0.0"
+set "PANDAY_ARCHIVE=%PANDAY_ARCHIVE%"
+if not defined PANDAY_ARCHIVE set "PANDAY_ARCHIVE=panday-finished-2026-11-27.zip"
 set "PANDAY_HOME=%PANDAY_HOME%"
 if not defined PANDAY_HOME set "PANDAY_HOME=%LOCALAPPDATA%\Panday"
 
@@ -18,7 +20,7 @@ where uv >nul 2>&1 || (
 )
 
 set "ARCHIVE=%TEMP%\panday-%RANDOM%.zip"
-set "URL=https://raw.githubusercontent.com/%PANDAY_REPO%/main/panday-finished-%PANDAY_VERSION%.zip"
+set "URL=https://github.com/%PANDAY_REPO%/releases/download/%PANDAY_VERSION%/%PANDAY_ARCHIVE%"
 echo Downloading Panday from %URL%
 powershell -NoProfile -ExecutionPolicy Bypass -Command "$ProgressPreference='SilentlyContinue'; Invoke-WebRequest -UseBasicParsing -Uri '%URL%' -OutFile '%ARCHIVE%'"
 if errorlevel 1 (

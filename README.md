@@ -74,15 +74,16 @@ curl -fsSL https://raw.githubusercontent.com/GG-Santos/panday/main/install.sh | 
 ```
 
 The installers require [`uv`](https://docs.astral.sh/uv/). They download the
-fingerprintable package archive into a persistent Panday home and install the
-CLI as an editable `uv` tool. Set these environment variables to customize the
-defaults:
+fingerprintable package archive from the latest GitHub Release into a
+persistent Panday home and install the CLI as an editable `uv` tool. Set these
+environment variables to customize the defaults:
 
 ```text
 PANDAY_REPO       GitHub owner/repository (default: GG-Santos/panday)
-PANDAY_VERSION    package suffix to download (default: 2026-11-27)
+PANDAY_VERSION    GitHub release tag (default: v1.0.0)
+PANDAY_ARCHIVE    release asset filename (default: panday-finished-2026-11-27.zip)
 PANDAY_HOME       extraction/install location
-PANDAY_URL        complete archive URL override (POSIX installer)
+PANDAY_URL        complete archive URL override
 ```
 
 Verify the installation:
@@ -196,3 +197,8 @@ python -B -m unittest discover -s lifecycle/tests -p 'test*.py'
 
 For the full architecture, evidence matrix, and known limitations, read
 [`docs/2026-11-24-habi-skill-capability-expansion-design.md`](docs/2026-11-24-habi-skill-capability-expansion-design.md).
+
+The source tree is the canonical browsable/contributor surface. Versioned ZIPs
+are kept in [GitHub Releases](https://github.com/GG-Santos/panday/releases),
+not committed to `main`, so clones stay reviewable and release downloads stay
+stable.
