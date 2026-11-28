@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-optimize-small.svg"
+  icon_large: "./assets/panday-optimize.png"
   display_name: Panday Optimize
   short_description: Improve the route for a specific task using a comparable
   default_prompt: Use $panday-optimize to improve the route for a specific task using a comparable baseline, matched trials, and explicit regression floors.

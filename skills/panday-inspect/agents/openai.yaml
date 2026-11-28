@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-inspect-small.svg"
+  icon_large: "./assets/panday-inspect.png"
   display_name: Panday Inspect
   short_description: Review exact skill files and dependencies for safety, trust,
   default_prompt: Use $panday-inspect to review exact skill files and dependencies for safety, trust, installability, permissions, and source-aware semantic risks without execution.

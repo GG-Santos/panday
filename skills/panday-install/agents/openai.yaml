@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-install-small.svg"
+  icon_large: "./assets/panday-install.png"
   display_name: Panday Install
   short_description: Resolve exact selected source and target, preview effects,
   default_prompt: Use $panday-install to resolve exact selected source and target, preview effects, require explicit apply authority, and verify installed bytes.

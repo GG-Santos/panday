@@ -4,7 +4,7 @@ setlocal EnableExtensions
 set "PANDAY_REPO=%PANDAY_REPO%"
 if not defined PANDAY_REPO set "PANDAY_REPO=GG-Santos/panday"
 set "PANDAY_VERSION=%PANDAY_VERSION%"
-if not defined PANDAY_VERSION set "PANDAY_VERSION=v1.1.1"
+if not defined PANDAY_VERSION set "PANDAY_VERSION=v1.1.2"
 set "PANDAY_ARCHIVE=%PANDAY_ARCHIVE%"
 if not defined PANDAY_ARCHIVE set "PANDAY_ARCHIVE=panday-%PANDAY_VERSION%.zip"
 set "PANDAY_HOME=%PANDAY_HOME%"

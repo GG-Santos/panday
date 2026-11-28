@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-connect-small.svg"
+  icon_large: "./assets/panday-connect.png"
   display_name: Panday Connect
   short_description: Specify contracts and controlled handoffs for independent skills
   default_prompt: Use $panday-connect to specify contracts and controlled handoffs for independent skills that work together.

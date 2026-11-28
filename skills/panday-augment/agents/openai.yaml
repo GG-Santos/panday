@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-augment-small.svg"
+  icon_large: "./assets/panday-augment.png"
   display_name: Panday Augment
   short_description: Add a justified capability to a working skill while preserving
   default_prompt: Use $panday-augment to add a justified capability to a working skill while preserving existing successful behavior and compatibility.

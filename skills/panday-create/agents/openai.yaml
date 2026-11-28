@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-create-small.svg"
+  icon_large: "./assets/panday-create.png"
   display_name: Panday Create
   short_description: Derive a reusable skill from a demonstrated unmet task and
   default_prompt: Use $panday-create to derive a reusable skill from a demonstrated unmet task and produce a package with trigger, procedure, boundaries, and evals.

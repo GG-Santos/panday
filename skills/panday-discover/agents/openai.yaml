@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-discover-small.svg"
+  icon_large: "./assets/panday-discover.png"
   display_name: Panday Discover
   short_description: Research existing skill sources and rank candidates by task fit
   default_prompt: Use $panday-discover to research existing skill sources and rank candidates by task fit with explicit provenance and uncertainty.

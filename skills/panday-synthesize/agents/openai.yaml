@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-synthesize-small.svg"
+  icon_large: "./assets/panday-synthesize.png"
   display_name: Panday Synthesize
   short_description: Merge multiple source skills into a single coherent candidate
   default_prompt: Use $panday-synthesize to merge multiple source skills into a single coherent candidate while mapping every retained capability and parent lineage.

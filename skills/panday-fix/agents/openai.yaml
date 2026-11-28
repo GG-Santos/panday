@@ -1,4 +1,6 @@
 interface:
+  icon_small: "./assets/panday-fix-small.svg"
+  icon_large: "./assets/panday-fix.png"
   display_name: Panday Fix
   short_description: Diagnose supported failures against the skill promise, make the
   default_prompt: Use $panday-fix to diagnose supported failures against the skill promise, make the smallest supported repair, and preserve regressions and rollback.

@@ -36,18 +36,18 @@ composition possible when a workflow spans more than one skill.
 
 | Skill | What it does | Typical handoff |
 | --- | --- | --- |
-| <img src="skills/panday-discover/assets/icon.svg" width="28"/> **Discover** | Find, qualify, and compare existing installable skills. | Inspect or Install |
-| <img src="skills/panday-create/assets/icon.svg" width="28"/> **Create** | Turn a task, document, or conversation pattern into a reusable skill. | Inspect or Evaluate |
-| <img src="skills/panday-inspect/assets/icon.svg" width="28"/> **Inspect** | Review exact skill bytes for security, trust, scope, and installability. | Install, Fix, or Card |
-| <img src="skills/panday-evaluate/assets/icon.svg" width="28"/> **Evaluate** | Build evals, run benchmarks, score evidence, and apply gates. | Fix, Card, or Optimize |
-| <img src="skills/panday-fix/assets/icon.svg" width="28"/> **Fix** | Repair a broken or high-frequency failure while preserving regressions. | Evaluate |
-| <img src="skills/panday-install/assets/icon.svg" width="28"/> **Install** | Preview and apply an authorized skill with byte verification. | Inspect or Card |
-| <img src="skills/panday-card/assets/icon.svg" width="28"/> **Card** | Render an evidence-linked governance and release summary. | Review or Handoff |
-| <img src="skills/panday-augment/assets/icon.svg" width="28"/> **Augment** | Add a justified capability without losing the existing contract. | Evaluate |
-| <img src="skills/panday-synthesize/assets/icon.svg" width="28"/> **Synthesize** | Merge overlapping skills while retaining each useful behavior. | Inspect or Evaluate |
-| <img src="skills/panday-optimize/assets/icon.svg" width="28"/> **Optimize** | Find a better path for a specific measured task. | Evaluate |
-| <img src="skills/panday-connect/assets/icon.svg" width="28"/> **Connect** | Define an explicit workflow between independent skills. | Evaluate or Card |
-| <img src="skills/panday-migrate/assets/icon.svg" width="28"/> **Migrate** | Convert a selected skill between supported agent platforms. | Inspect or Evaluate |
+| <img src="skills/panday-discover/assets/panday-discover-small.svg" width="28"/> **Discover** | Find, qualify, and compare existing installable skills. | Inspect or Install |
+| <img src="skills/panday-create/assets/panday-create-small.svg" width="28"/> **Create** | Turn a task, document, or conversation pattern into a reusable skill. | Inspect or Evaluate |
+| <img src="skills/panday-inspect/assets/panday-inspect-small.svg" width="28"/> **Inspect** | Review exact skill bytes for security, trust, scope, and installability. | Install, Fix, or Card |
+| <img src="skills/panday-evaluate/assets/panday-evaluate-small.svg" width="28"/> **Evaluate** | Build evals, run benchmarks, score evidence, and apply gates. | Fix, Card, or Optimize |
+| <img src="skills/panday-fix/assets/panday-fix-small.svg" width="28"/> **Fix** | Repair a broken or high-frequency failure while preserving regressions. | Evaluate |
+| <img src="skills/panday-install/assets/panday-install-small.svg" width="28"/> **Install** | Preview and apply an authorized skill with byte verification. | Inspect or Card |
+| <img src="skills/panday-card/assets/panday-card-small.svg" width="28"/> **Card** | Render an evidence-linked governance and release summary. | Review or Handoff |
+| <img src="skills/panday-augment/assets/panday-augment-small.svg" width="28"/> **Augment** | Add a justified capability without losing the existing contract. | Evaluate |
+| <img src="skills/panday-synthesize/assets/panday-synthesize-small.svg" width="28"/> **Synthesize** | Merge overlapping skills while retaining each useful behavior. | Inspect or Evaluate |
+| <img src="skills/panday-optimize/assets/panday-optimize-small.svg" width="28"/> **Optimize** | Find a better path for a specific measured task. | Evaluate |
+| <img src="skills/panday-connect/assets/panday-connect-small.svg" width="28"/> **Connect** | Define an explicit workflow between independent skills. | Evaluate or Card |
+| <img src="skills/panday-migrate/assets/panday-migrate-small.svg" width="28"/> **Migrate** | Convert a selected skill between supported agent platforms. | Inspect or Evaluate |
 
 ## Install
 
@@ -74,13 +74,13 @@ curl -fsSL https://raw.githubusercontent.com/GG-Santos/panday/main/install.sh | 
 ```
 
 The installers require [`uv`](https://docs.astral.sh/uv/). They download the
-package archive from the pinned v1.1.1 GitHub Release into a
+package archive from the pinned v1.1.2 GitHub Release into a
 persistent Panday home and install the CLI as an editable `uv` tool. Set these
 environment variables to customize the defaults:
 
 ```text
 PANDAY_REPO       GitHub owner/repository (default: GG-Santos/panday)
-PANDAY_VERSION    GitHub release tag (default: v1.1.1)
+PANDAY_VERSION    GitHub release tag (default: v1.1.2)
 PANDAY_ARCHIVE    release asset filename (default: panday-<tag>.zip)
 PANDAY_HOME       extraction/install location
 PANDAY_URL        complete archive URL override (POSIX installer only)
@@ -168,13 +168,14 @@ assets/       architecture visual used by this README
 ```
 
 Every skill package contains its own `SKILL.md`, agents, references, assets,
-scripts, evals, tests, and `.skillignore`. Each `assets/icon.svg` uses a 64×64
+scripts, evals, tests, and `.skillignore`. Each skill exposes `assets/<skill-name>-small.svg` and a matching 128×128
+`assets/<skill-name>.png` through `agents/openai.yaml`. The SVG uses a 64×64
 rounded-square tile with a distinct glyph and an accessible name. The current
 system is documented in [the icon design plan](docs/2026-11-27-panday-icons-v3-design.md).
 
-Download [panday-v1.1.1.zip](https://github.com/GG-Santos/panday/releases/download/v1.1.1/panday-v1.1.1.zip)
+Download [panday-v1.1.2.zip](https://github.com/GG-Santos/panday/releases/download/v1.1.2/panday-v1.1.2.zip)
 from the release. Its README, installers, source files, and all twelve icons
-match the release tag. The bundle version is v1.1.1; the unchanged CLI reports
+match the release tag. The bundle version is v1.1.2; the unchanged CLI reports
 its own implementation version, 0.1.0.
 
 ## Trust and release model

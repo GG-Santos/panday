@@ -2,7 +2,7 @@
 set -eu
 
 PANDAY_REPO="${PANDAY_REPO:-GG-Santos/panday}"
-PANDAY_VERSION="${PANDAY_VERSION:-v1.1.1}"
+PANDAY_VERSION="${PANDAY_VERSION:-v1.1.2}"
 PANDAY_ARCHIVE="${PANDAY_ARCHIVE:-panday-${PANDAY_VERSION}.zip}"
 PANDAY_HOME="${PANDAY_HOME:-${XDG_DATA_HOME:-$HOME/.local/share}/panday}"
 URL="${PANDAY_URL:-https://github.com/${PANDAY_REPO}/releases/download/${PANDAY_VERSION}/${PANDAY_ARCHIVE}}"
