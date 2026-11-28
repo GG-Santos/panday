@@ -8,7 +8,13 @@ You finally get your AI assistant to produce the report, review, or summary you 
 
 **12 focused skills. Use one when you need it, or combine them into a workflow.**
 
-[Install Panday](#install-panday) · [Choose a skill](#choose-the-right-skill) · [Explore all 12](#the-12-panday-skills) · [Questions](#frequently-asked-questions) · [Download](https://github.com/GG-Santos/panday/releases/latest)
+<p align="center">
+  <a href="#install-panday"><strong>Install Panday</strong></a> &nbsp; / &nbsp;
+  <a href="#choose-the-right-skill">Find your skill</a> &nbsp; / &nbsp;
+  <a href="#the-12-panday-skills">Explore the collection</a> &nbsp; / &nbsp;
+  <a href="#frequently-asked-questions">FAQ</a> &nbsp; / &nbsp;
+  <a href="https://github.com/GG-Santos/panday/releases/latest">Download release</a>
+</p>
 
 ## Project description
 
@@ -25,9 +31,23 @@ Panday helps you build and maintain those recipes. You describe the work in ordi
 - **Organize growing workflows.** Combine overlapping skills or connect independent ones without losing their roles.
 - **Understand your tools.** Produce readable skill summaries and prepare packages for another supported assistant.
 
+| Capture your best work | Improve what you use | Build a connected toolkit |
+| :--- | :--- | :--- |
+| Turn a conversation, document, or recurring task into instructions your assistant can reuse. | Investigate failures, test changes, and add capabilities with a clear goal. | Find skills, understand their requirements, and define how they work together. |
+| **Create · Discover · Card** | **Inspect · Evaluate · Fix · Augment · Optimize** | **Install · Synthesize · Connect · Migrate** |
+
 Panday is useful for writers, researchers, operations teams, project leads, and anyone who repeatedly asks an AI assistant to follow a particular process. You do not need to write code to describe a workflow. Initial setup still depends on how your assistant supports local skills.
 
+---
+
 ## Install Panday
+
+| Route | Best for | Where to begin |
+| :--- | :--- | :--- |
+| **Skill folders** | Using Panday in your assistant | Download, extract, and add selected folders as described below. |
+| **Optional helper** | Repeatable checks and command-line reports | Follow the [Windows or macOS/Linux setup](#optional-command-line-setup). |
+
+**You need:** an AI assistant that supports local skill folders, access to its supported skill location, and an extracted Panday package. The helper has [additional requirements](#optional-command-line-setup).
 
 ### 1. Choose how you want to use Panday
 
@@ -74,7 +94,7 @@ You do not have to run every Panday skill in order. Use Create to make something
 
 ## The 12 Panday skills
 
-Each skill below has its own purpose, personality, and visual identity. Select one section to understand the value it brings, then open its full instructions for the complete workflow.
+Each section explains the result you can ask for, what to provide, and how the work proceeds. Expand the worked examples for a concrete illustration. Example outcomes below describe the expected format; they are not benchmark results or a promise that a particular run will succeed.
 
 <a id="discover--find-a-useful-starting-point"></a>
 
@@ -90,7 +110,29 @@ Use it when you know the outcome you want but do not know which skill to choose.
 
 Discover helps you choose; it does not automatically install a result. Popularity and a convincing description are not substitutes for inspecting the actual package.
 
-[Open Discover's instructions](skills/panday-discover/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| Your task, assistant, preferred sources, and constraints such as local processing or required tools. | A ranked shortlist with source links, reasons for fit, compatibility gaps, and a recommended next action. |
+
+**How it helps you choose**
+
+1. Translate the task into focused search concepts, including the platform and tools that matter.
+2. Search your named sources first, then available registries or local folders. Open candidate instructions where possible.
+3. Compare actual scope, compatibility, maintenance signals, and provenance. Mark uncertain information explicitly.
+4. Explain whether to inspect a candidate, keep looking, or consider creating a missing capability.
+
+<details>
+<summary><strong>Worked example: find a meeting assistant</strong></summary>
+
+**Your context:** You use a local assistant to summarize meeting notes. Names must be preserved, deadlines must come from the notes, and no external integration is wanted.
+
+**A useful shortlist explains:** Candidate A extracts actions but requires a cloud integration; Candidate B reads local notes but does not address missing deadlines; Candidate C covers both, with a linked source for those claims. If the source cannot be opened, that limitation appears beside the candidate.
+
+**Your next decision:** Choose a candidate for Inspect. Discovery alone does not establish that its code or instructions are safe.
+
+</details>
+
+[Full workflow](skills/panday-discover/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -108,7 +150,29 @@ Use it when you keep explaining the same process or want to share a dependable w
 
 Create should resolve important gaps rather than hide them in vague instructions. A newly written skill is a candidate to try and evaluate, not proof that every future result will be correct.
 
-[Open Create's instructions](skills/panday-create/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| A recurring task, conversation, checklist, or document; representative inputs; and an example of a good result. | A reusable candidate with a trigger, instructions, expected output, necessary resources, and planned checks. |
+
+**From useful routine to usable skill**
+
+1. Identify the recurring need and check whether an existing skill already covers it.
+2. Extract the method: what starts the task, what information is required, which decisions matter, and how missing information is handled.
+3. Write actionable instructions and add supporting templates or references where they serve a real step.
+4. Check the package structure and links, and define normal, incomplete-input, and boundary cases for evaluation.
+
+<details>
+<summary><strong>Worked example: a reusable weekly update</strong></summary>
+
+**You provide:** Two sets of weekly notes, a report you liked, and the rule “never turn a tentative date into a commitment.”
+
+**The candidate should describe:** How to separate completed work, blockers, and next steps; how to preserve source dates; and when to request clarification. Its report template gives those sections a consistent shape.
+
+**Useful checks include:** Notes with no completed work, conflicting dates, and an unresolved blocker carried over from last week. Trying the skill on another week's notes helps reveal whether it captured your method or merely copied the examples.
+
+</details>
+
+[Full workflow](skills/panday-create/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -126,7 +190,29 @@ Use it before adopting an unfamiliar package or after a meaningful source change
 
 Inspection is read-only and does not run the candidate's scripts. It can identify concerns and missing evidence; it cannot guarantee that a package is harmless in every environment. A changed package needs a fresh review of the affected content.
 
-[Open Inspect's instructions](skills/panday-inspect/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| The exact folder or archive, intended host, and the question you need answered before adoption. | Source-linked findings, affected files, permission and dependency concerns, and explicit review limits. |
+
+**What gets examined**
+
+1. Identify the package revision and inventory its instructions, scripts, references, metadata, and linked resources.
+2. Read instructions in context: what actions are requested, what authority is assumed, and what information may leave the environment?
+3. Review relevant code as source, along with package contents and hidden or unavailable dependencies.
+4. Report supported findings and unresolved questions separately, with locations that let an owner investigate or repair them.
+
+<details>
+<summary><strong>Worked example: a downloaded report generator</strong></summary>
+
+**Your question:** “This skill says it only formats local reports. Does the package support that description?”
+
+**A useful finding might say:** A linked script contains an outbound upload request, identify the file and operation, and explain what input it appears to send. The report should distinguish a reachable workflow step from unused code or an uncertain dependency.
+
+**Review limits remain visible:** If a referenced remote script is unavailable, its behavior remains unreviewed. The inspector does not run it to fill the gap. An installation decision can then account for that missing information.
+
+</details>
+
+[Full workflow](skills/panday-inspect/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -144,7 +230,29 @@ Use it when you want to know whether a skill performs its intended task or wheth
 
 Writing tests is different from running them. If the required model or tools are unavailable, Evaluate should identify that gap rather than report unperformed tests as passed.
 
-[Open Evaluate's instructions](skills/panday-evaluate/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| The skill revision, a decision to make, representative tasks, and any existing runs or reports. | Cases or configuration, a suitable comparison design, assessed evidence where available, and an explained verdict. |
+
+**Choose the evaluation you actually need**
+
+1. Define the question: validate a package, test a behavior, compare a revision, interpret a report, or apply a CI policy.
+2. Specify expected outcomes before judging results. Include ordinary tasks, difficult inputs, and cases where the skill should decline or ask for information.
+3. When runs are authorized and available, compare equivalent inputs under declared conditions and retain individual outputs.
+4. Explain failures, incomplete cases, variation, and recorded time or token cost. Keep structural validity distinct from demonstrated task quality.
+
+<details>
+<summary><strong>Worked example: did a summary skill improve?</strong></summary>
+
+**Decision:** Keep the current revision or adopt a revision intended to reduce invented deadlines.
+
+**Comparison:** Run both on the same representative notes, including missing and conflicting dates. Score factual preservation and required content separately from formatting. Repeat where appropriate rather than relying on one favorable output.
+
+**Report:** Show the examples behind failures, whether both versions completed the same cases, and any efficiency tradeoff. A policy may return **ALLOW**, **HOLD**, or **BLOCK** according to its declared thresholds. Missing required evidence supports a hold, not an invented success.
+
+</details>
+
+[Full workflow](skills/panday-evaluate/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -162,7 +270,31 @@ Use it when a skill repeatedly misses required information, violates its own ins
 
 Fix is for broken promises. If the existing behavior is correct and you want a new feature, choose Augment. If it works but could be more effective for a particular task, choose Optimize.
 
-[Open Fix's instructions](skills/panday-fix/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| The failing revision, an input that exposes the issue, actual output, and the intended behavior. | A diagnosis, a scoped repair candidate, retained prior evidence, and checks for the failure and related regressions. |
+
+**A repair with a reason behind it**
+
+1. Confirm that the correct skill and revision were loaded and that missing tools or inputs did not cause the problem.
+2. Reproduce or characterize the supported failure and locate the instruction, resource, or decision that causes it.
+3. Preserve the predecessor and make a correction tied to that cause.
+4. Recheck the failing case and representative successful uses. Explain what is demonstrated and what remains untested.
+
+<details>
+<summary><strong>Worked example: the disappearing blocker</strong></summary>
+
+**Observed failure:** A weekly-report skill drops an unresolved blocker whenever there is no new progress on it.
+
+**Potential cause:** Its selection rule only includes items updated during the current week, despite promising to include unresolved blockers.
+
+**A focused repair:** Separate the “new progress” filter from the “still unresolved” filter. Recheck both the reported failure and a case where last week's blocker has since been resolved, so the repair does not keep obsolete items forever.
+
+If the skill never promised carry-over behavior, discuss that as a capability addition through Augment instead.
+
+</details>
+
+[Full workflow](skills/panday-fix/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -180,7 +312,29 @@ Use it after choosing the skill and destination. Provide the source, the specifi
 
 The package applied must match the one reviewed for that operation. Missing authorization, unresolved findings, destination conflicts, or changed source files should be surfaced rather than silently bypassed. Private repository access uses the access available in your environment.
 
-[Open Install's instructions](skills/panday-install/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| A selected local or repository source, the skill subfolder if needed, a named target project, and preview/apply intent. | A package and destination preview; after an eligible apply, verified installed files and an operation report. |
+
+**Know what is being added and where**
+
+1. Resolve the source and destination explicitly, including the revision and subpath when applicable.
+2. Inspect unfamiliar packages and identify conflicts, missing evidence, or held findings that affect eligibility.
+3. Preview the selected bytes and intended writes. Bind the operation to a fingerprint—a content identifier for that package.
+4. Apply within the requested authority, then verify the installed content. If the source changes, refresh the preview before proceeding.
+
+<details>
+<summary><strong>Worked example: one skill from a large repository</strong></summary>
+
+**Your request:** Install only the meeting-notes skill from a repository containing several tools into a named project.
+
+**Preview:** Identify the chosen repository revision, exact subfolder, destination, and any existing destination folder. The operation should not expand to every sibling skill.
+
+**After applying:** Verify that the installed bytes match the selected candidate. If an existing folder conflicts, or the candidate changes between preview and apply, report the issue instead of silently replacing content or trusting an outdated review.
+
+</details>
+
+[Full workflow](skills/panday-install/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -198,7 +352,29 @@ Use it when sharing a skill, reviewing a collection, or refreshing documentation
 
 A card is a summary, not a certificate. It should not invent an owner, license, approval, or successful test result. The responsible owner can review it before publication.
 
-[Open Card's instructions](skills/panday-card/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| A skill package, intended audience, card destination, and any ownership or evaluation records you want included. | A reviewable overview linked to source evidence, with known risks, missing information, and owner-review status. |
+
+**Make a skill understandable to someone new**
+
+1. Identify which copy and revision the card describes.
+2. Extract the declared purpose, expected inputs and outputs, dependencies, and relevant permissions.
+3. Summarize available inspection or evaluation evidence with its coverage and limitations.
+4. Mark unknown ownership, license, review, or performance information explicitly and prepare the card for owner review.
+
+<details>
+<summary><strong>Worked example: hand a workflow to your team</strong></summary>
+
+**Situation:** A colleague needs to know whether your customer-feedback skill suits a new project.
+
+**The card explains:** Which feedback formats it accepts, what summary it produces, whether it depends on an external tool, where the documented owner information comes from, and which cases have actually been tried.
+
+**Useful uncertainty:** If the package has no license statement or no evidence for multilingual inputs, those fields remain unknown or unassessed. The card should make a decision easier without making unsupported claims on the owner's behalf.
+
+</details>
+
+[Full workflow](skills/panday-card/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -216,7 +392,31 @@ Use it when a skill does its current job but your needs have expanded. Describe 
 
 Augment should make the addition explicit. It should not quietly redefine the skill's purpose or remove existing value to make room for the new feature.
 
-[Open Augment's instructions](skills/panday-augment/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| A working revision, examples of successful use, the proposed addition, and existing behavior to preserve. | An extension candidate, a map of changed and retained responsibilities, compatibility notes, and targeted checks. |
+
+**Grow a useful skill deliberately**
+
+1. Establish the current promise and working baseline, including callers and expected output formats.
+2. Decide whether the new need belongs inside the skill or would be better served by a reference or specialist handoff.
+3. Add a clear branch for the new behavior and describe any new tools, dependencies, or permission implications.
+4. Check the new path and repeat representative existing cases so an addition does not erase what already works.
+
+<details>
+<summary><strong>Worked example: an external version of an internal update</strong></summary>
+
+**Existing value:** The internal report includes detailed blockers, staffing notes, and delivery risks.
+
+**New capability:** Produce a customer-facing version when explicitly requested, using only approved information.
+
+**What needs checking:** The original internal format still works; the new mode excludes confidential details; ambiguous audience requests prompt clarification; and the output does not silently substitute one audience's report for the other.
+
+The extension record makes those behavior changes and checks visible to the owner.
+
+</details>
+
+[Full workflow](skills/panday-augment/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -234,7 +434,29 @@ Use it when two or more skills serve a related purpose and maintaining them sepa
 
 The goal is a useful combined workflow, not a shorter document. Conflicting rules need an explicit resolution. If the skills have incompatible purposes or authority requirements, keeping them separate may be the better result.
 
-[Open Synthesize's instructions](skills/panday-synthesize/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| Two or more complete skill packages, the combined goal, and capabilities or constraints that must survive. | A merged candidate where appropriate, parent-to-result traceability, conflict decisions, and coverage gaps. |
+
+**Preserve the methods behind the words**
+
+1. Inventory each source's triggers, steps, outputs, resources, successful cases, and authority limits.
+2. Identify duplicate, complementary, conflicting, and obsolete elements. Resolve material conflicts explicitly.
+3. Design one coherent entry point with distinct branches where different inputs require different methods.
+4. Map each material source capability to the result and retain regression cases from every parent.
+
+<details>
+<summary><strong>Worked example: decisions and actions in one meeting skill</strong></summary>
+
+**Source A:** Captures decisions with rationale and dissent. **Source B:** Captures actions with owners, deadlines, and missing-detail warnings.
+
+**The synthesis:** Supports a coherent meeting record while keeping separate decision and action sections. It preserves rationale, dissent, and uncertainty instead of reducing everything to a generic list of bullets.
+
+**Coverage review:** Show where each parent's valuable behavior lives in the result. If one source requires an incompatible approval process, surface the conflict and consider keeping the skills separate through Connect.
+
+</details>
+
+[Full workflow](skills/panday-synthesize/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -252,7 +474,29 @@ Use it when the skill already works but its current method may not be the best f
 
 Shorter instructions are not automatically better. An optimization that removes necessary checks or weakens the result has not met the goal. If the comparison is inconclusive, retaining the current approach is a valid outcome.
 
-[Open Optimize's instructions](skills/panday-optimize/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| A working skill, a specific target task, baseline examples, and a goal such as fewer omissions or less time. | A diagnosed bottleneck, alternative approach, matched comparison evidence where available, and a recommendation. |
+
+**Improve the route, then check the destination**
+
+1. Define the task and improvement measure, plus the quality and safety constraints the new approach must retain.
+2. Review traces or representative results to locate the bottleneck before rewriting instructions.
+3. Compare materially different approaches, such as decision order, reference loading, or a reusable template.
+4. Judge equivalent cases and broader regressions. Adopt, revise, retain the baseline, or call the evidence inconclusive.
+
+<details>
+<summary><strong>Worked example: reviewing a long requirements document</strong></summary>
+
+**Baseline:** A single-pass review frequently overlooks requirements buried in later sections.
+
+**Alternative:** First build a source-linked requirements inventory, then review the proposal against that inventory. The change is a different method, not simply a longer instruction.
+
+**Comparison:** Check missed requirements, unsupported findings, completion, and recorded time across matched documents. If coverage improves but time exceeds your stated limit, explain the tradeoff instead of declaring an unconditional improvement.
+
+</details>
+
+[Full workflow](skills/panday-optimize/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -270,7 +514,31 @@ Use it when separate capabilities would be useful together. Provide the particip
 
 The connected skills retain their independent purposes. Connecting them does not automatically grant new permissions or create a background automation service; execution still depends on your assistant and available tools.
 
-[Open Connect's instructions](skills/panday-connect/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| Independent skills, the desired end result, expected order or branches, and review points. | A workflow specification with responsibilities, handoff fields, validation rules, pause conditions, and recovery behavior. |
+
+**Make the handoff as clear as the individual task**
+
+1. Read each skill's contract and map its inputs, outputs, prerequisites, and side effects.
+2. Define the smallest useful sequence or branching workflow and name who selects each next step.
+3. Specify the information crossing every handoff, including how completeness and freshness are checked.
+4. Walk through normal, partial, stale, failed, and cancelled cases, including retries and duplicate runs where relevant.
+
+<details>
+<summary><strong>Worked example: research findings become a project plan</strong></summary>
+
+**Producer:** An interview-summary skill returns confirmed findings, quotes, open questions, and source references.
+
+**Consumer:** A planning skill accepts confirmed findings as inputs and treats open questions as unresolved dependencies.
+
+**Handoff rule:** Required fields must be present and the findings must belong to the expected revision. An unresolved critical requirement pauses planning or produces a clearly bounded partial plan. It must not disappear merely because the next skill lacks a field for it.
+
+Connect produces that workflow specification; running it requires an appropriate host or runner.
+
+</details>
+
+[Full workflow](skills/panday-connect/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ---
 
@@ -288,7 +556,29 @@ Use it when moving a skill between supported Codex and Claude formats. Specify t
 
 Packaging compatibility is different from identical behavior. The destination assistant may have different tools or instruction handling, so try the migrated skill in its new environment before relying on it.
 
-[Open Migrate's instructions](skills/panday-migrate/SKILL.md)
+| Bring this | Leave with this |
+| :--- | :--- |
+| The source package, named target host, destination, and any provider-specific dependencies you know about. | A compatibility inventory, conversion plan, preview or authorized target package, and a migration report. |
+
+**Move the package with its assumptions in view**
+
+1. Inventory instructions, metadata, invocation conventions, tools, resources, and local links while preserving the source.
+2. Classify each relevant element as preserved, transformed, unsupported, or requiring an owner choice.
+3. Preview destination files and apply within the requested authority, using the same package identity checked in the preview.
+4. Validate structure and links, report remaining host-specific dependencies, and identify the destination checks still needed.
+
+<details>
+<summary><strong>Worked example: prepare a Codex skill for Claude</strong></summary>
+
+**Source:** A release-notes skill includes instructions, a template, interface metadata, and a reference to a host-specific integration.
+
+**Expected treatment:** Preserve the instructions and template, adapt supported packaging conventions, and explicitly flag the integration that needs a destination equivalent. Do not invent a tool with the same name or silently remove the dependent workflow step.
+
+**Completion:** The report identifies changed and preserved files and any unverified host assumptions. Run a representative task in the destination host before treating the conversion as behaviorally equivalent.
+
+</details>
+
+[Full workflow](skills/panday-migrate/SKILL.md) · [Back to skill guide](#choose-the-right-skill)
 
 ## What this looks like in everyday work
 
