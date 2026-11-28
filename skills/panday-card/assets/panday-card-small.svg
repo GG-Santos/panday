@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Card icon" focusable="false">
-  <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
-  <g fill="none" stroke="#f6c45b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="15" y="19" width="34" height="27" rx="4"/><circle cx="25" cy="28" r="3"/><path d="M20 38c1-5 9-5 10 0M36 28h7M36 36h7"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Panday Card"><title>Panday Card</title><rect x="1" y="1" width="126" height="126" rx="28" fill="#000000" stroke="#2a2a2a" stroke-width="2"/><g transform="translate(25.6 25.6) scale(3.200)"><rect x="2.5" y="5" width="19" height="14" rx="2.8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="10.3" r="2" fill="#ffffff"/><path d="M5 16.2a3.5 3.5 0 0 1 7 0Z" fill="#ffffff" stroke="#ffffff" stroke-width="1" stroke-linejoin="round"/><path d="M14.3 10H18.5M14.3 13.6H18.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

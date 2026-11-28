@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Install icon" focusable="false">
-  <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
-  <g fill="none" stroke="#65a9ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M32 15v22m-8-8 8 8 8-8M17 36v12h30V36"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Panday Install"><title>Panday Install</title><rect x="1" y="1" width="126" height="126" rx="28" fill="#000000" stroke="#2a2a2a" stroke-width="2"/><g transform="translate(25.6 25.6) scale(3.200)"><path d="M12 3.5V15M7.5 10.8 12 15.3l4.5-4.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15.5V19a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 19v-3.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

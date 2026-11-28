@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Optimize icon" focusable="false">
-  <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
-  <g fill="none" stroke="#55db74" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M18 45a19 19 0 1 1 28 0M32 15v5M17 26l4 2M47 26l-4 2M32 36l10-12"/><circle cx="32" cy="36" r="3"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Panday Optimize"><title>Panday Optimize</title><rect x="1" y="1" width="126" height="126" rx="28" fill="#000000" stroke="#2a2a2a" stroke-width="2"/><g transform="translate(25.6 25.6) scale(3.200)"><g transform="translate(12 12) rotate(45) scale(1.15) translate(-12 -12)"><path d="M12 1.8C16 4.8 17 9 16 14H8C7 9 8 4.8 12 1.8Z" fill="#ffffff"/><path d="M8 10.5 4.8 15.2V18L8 16.2ZM16 10.5 19.2 15.2V18L16 16.2Z" fill="#ffffff"/><path d="M10 16.2H14L12 21.5Z" fill="#ffffff"/><circle cx="12" cy="8.6" r="1.9" fill="#000"/></g></g></svg>

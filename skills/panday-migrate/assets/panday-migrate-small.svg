@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panday Migrate icon" focusable="false">
-  <rect x="3" y="3" width="58" height="58" rx="15" fill="#101a2e"/>
-  <g fill="none" stroke="#ff9860" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M25 17H16v30h9M39 17h9v30h-9M24 32h16m-7-7 7 7-7 7"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Panday Migrate"><title>Panday Migrate</title><rect x="1" y="1" width="126" height="126" rx="28" fill="#000000" stroke="#2a2a2a" stroke-width="2"/><g transform="translate(25.6 25.6) scale(3.200)"><rect x="2.5" y="5" width="11" height="14" rx="2.8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.8 9.5H10.2M5.8 12H10.2M5.8 14.5H10.2" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 12H21.5M17.6 8 21.6 12 17.6 16" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

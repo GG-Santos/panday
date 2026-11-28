@@ -4,7 +4,7 @@
 
 You finally get your AI assistant to produce the report, review, or summary you wanted. Next week, you explain the same process again. Panday helps you turn that useful routine into a reusable skill—and gives you the tools to find, check, improve, and organize skills as your needs grow.
 
-![An illustrated workbench with reusable idea cards, a magnifying glass, tools, and connected pieces](assets/panday-workbench.png)
+![Panday terminal-style brand banner showing the reusable skill system](assets/panday-banner.svg)
 
 **12 focused skills. Use one when you need it, or combine them into a workflow.**
 
@@ -79,6 +79,7 @@ Each skill below has its own purpose, personality, and visual identity. Select o
 ### Discover — find a useful starting point
 
 <div align="center"><img src="assets/../skills/panday-discover/assets/panday-discover-small.svg" alt="Panday Discover icon" width="72" height="72"></div>
+<img src="skills/panday-discover/assets/panday-discover-banner.svg" alt="Panday Discover banner" width="100%">
 
 **Look for a suitable existing skill before spending time building one.** Discover turns your task into a focused search and helps compare the candidates it finds.
 
@@ -97,6 +98,7 @@ Discover helps you choose; it does not automatically install a result. Popularit
 ### Create — make your good process reusable
 
 <div align="center"><img src="assets/../skills/panday-create/assets/panday-create-small.svg" alt="Panday Create icon" width="72" height="72"></div>
+<img src="skills/panday-create/assets/panday-create-banner.svg" alt="Panday Create banner" width="100%">
 
 **Turn a recurring task, a useful conversation, or a document into a skill.** Create helps identify the repeatable method and express it as clear instructions with the supporting materials it needs.
 
@@ -115,6 +117,7 @@ Create should resolve important gaps rather than hide them in vague instructions
 ### Inspect — understand a skill before trusting it
 
 <div align="center"><img src="assets/../skills/panday-inspect/assets/panday-inspect-small.svg" alt="Panday Inspect icon" width="72" height="72"></div>
+<img src="skills/panday-inspect/assets/panday-inspect-banner.svg" alt="Panday Inspect banner" width="100%">
 
 **Look beyond the description and examine what a skill actually asks your assistant to do.** Inspect reviews the source files for suspicious instructions, excessive permissions, unsafe dependencies, and other concerns.
 
@@ -133,6 +136,7 @@ Inspection is read-only and does not run the candidate's scripts. It can identif
 ### Evaluate — find out how well a skill works
 
 <div align="center"><img src="assets/../skills/panday-evaluate/assets/panday-evaluate-small.svg" alt="Panday Evaluate icon" width="72" height="72"></div>
+<img src="skills/panday-evaluate/assets/panday-evaluate-banner.svg" alt="Panday Evaluate banner" width="100%">
 
 **Replace “it seems good” with examples and results you can examine.** Evaluate helps write test cases, validate evaluation files, compare outputs, interpret benchmark reports, and define quality checks.
 
@@ -151,6 +155,7 @@ Writing tests is different from running them. If the required model or tools are
 ### Fix — repair a skill that misses the mark
 
 <div align="center"><img src="assets/../skills/panday-fix/assets/panday-fix-small.svg" alt="Panday Fix icon" width="72" height="72"></div>
+<img src="skills/panday-fix/assets/panday-fix-banner.svg" alt="Panday Fix banner" width="100%">
 
 **Address a failure in what a skill is already supposed to do.** Fix starts with a reproducible problem, identifies the likely cause, and makes a targeted correction.
 
@@ -169,6 +174,7 @@ Fix is for broken promises. If the existing behavior is correct and you want a n
 ### Install — add the skill you selected
 
 <div align="center"><img src="assets/../skills/panday-install/assets/panday-install-small.svg" alt="Panday Install icon" width="72" height="72"></div>
+<img src="skills/panday-install/assets/panday-install-banner.svg" alt="Panday Install banner" width="100%">
 
 **Move a chosen skill into the right place with a clear preview of the change.** Install supports selected local packages and repository sources, including private repositories when access is available.
 
@@ -187,6 +193,7 @@ The package applied must match the one reviewed for that operation. Missing auth
 ### Card — make a skill easy to understand
 
 <div align="center"><img src="assets/../skills/panday-card/assets/panday-card-small.svg" alt="Panday Card icon" width="72" height="72"></div>
+<img src="skills/panday-card/assets/panday-card-banner.svg" alt="Panday Card banner" width="100%">
 
 **Create a readable overview for the next person who encounters a skill.** Card summarizes its purpose, use, ownership, permissions, evidence, and known limitations from available sources.
 
@@ -205,6 +212,7 @@ A card is a summary, not a certificate. It should not invent an owner, license, 
 ### Augment — add something useful
 
 <div align="center"><img src="assets/../skills/panday-augment/assets/panday-augment-small.svg" alt="Panday Augment icon" width="72" height="72"></div>
+<img src="skills/panday-augment/assets/panday-augment-banner.svg" alt="Panday Augment banner" width="100%">
 
 **Extend a working skill while keeping the behavior you already value.** Augment adds a justified capability and checks how it interacts with the existing workflow.
 
@@ -223,6 +231,7 @@ Augment should make the addition explicit. It should not quietly redefine the sk
 ### Synthesize — combine skills without losing their value
 
 <div align="center"><img src="assets/../skills/panday-synthesize/assets/panday-synthesize-small.svg" alt="Panday Synthesize icon" width="72" height="72"></div>
+<img src="skills/panday-synthesize/assets/panday-synthesize-banner.svg" alt="Panday Synthesize banner" width="100%">
 
 **Bring overlapping skills into one coherent skill while preserving what each contributes.** Synthesize examines the source skills before deciding how their instructions and resources fit together.
 
@@ -241,6 +250,7 @@ The goal is a useful combined workflow, not a shorter document. Conflicting rule
 ### Optimize — find a better way to do the job
 
 <div align="center"><img src="assets/../skills/panday-optimize/assets/panday-optimize-small.svg" alt="Panday Optimize icon" width="72" height="72"></div>
+<img src="skills/panday-optimize/assets/panday-optimize-banner.svg" alt="Panday Optimize banner" width="100%">
 
 **Improve a working skill against a specific goal.** Optimize explores whether a different approach produces better results, uses less time, or reduces unnecessary work while maintaining required quality.
 
@@ -259,6 +269,7 @@ Shorter instructions are not automatically better. An optimization that removes 
 ### Connect — build a workflow between skills
 
 <div align="center"><img src="assets/../skills/panday-connect/assets/panday-connect-small.svg" alt="Panday Connect icon" width="72" height="72"></div>
+<img src="skills/panday-connect/assets/panday-connect-banner.svg" alt="Panday Connect banner" width="100%">
 
 **Make independent skills cooperate without merging them.** Connect defines how one skill's output becomes another's input, what information must accompany it, and when the workflow should pause.
 
@@ -277,6 +288,7 @@ The connected skills retain their independent purposes. Connecting them does not
 ### Migrate — prepare a skill for another assistant
 
 <div align="center"><img src="assets/../skills/panday-migrate/assets/panday-migrate-small.svg" alt="Panday Migrate icon" width="72" height="72"></div>
+<img src="skills/panday-migrate/assets/panday-migrate-banner.svg" alt="Panday Migrate banner" width="100%">
 
 **Adapt a skill package for a supported destination without hiding what changes.** Migrate reviews the source structure and prepares the packaging and metadata required by the target host.
 
