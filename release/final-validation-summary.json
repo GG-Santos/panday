@@ -5,98 +5,98 @@
     {
       "skill": "panday-augment",
       "passed_strict_validation": true,
-      "archive_sha256": "60c77fe49038da80e4064222405764e48d9bbf7997b38c95445f23c14bbc1f68",
-      "archive_bytes": 11973,
-      "files": 16,
-      "unpacked_bytes": 19314
+      "archive_sha256": "23aa329789184a3e955740cb6fe9745aa03bd8891e1a41398e8335e1340a7282",
+      "archive_bytes": 14202,
+      "files": 17,
+      "unpacked_bytes": 23300
     },
     {
       "skill": "panday-card",
       "passed_strict_validation": true,
-      "archive_sha256": "577860dea4313228edb706ba0ea72cc184e94df4a9c729184a6195433ad30651",
-      "archive_bytes": 14602,
-      "files": 16,
-      "unpacked_bytes": 24656
+      "archive_sha256": "7016c4f106545af1f5bed5c4d39deaaeb2cf46555e6ac74c3418b374ab8dfba9",
+      "archive_bytes": 16106,
+      "files": 17,
+      "unpacked_bytes": 27819
     },
     {
       "skill": "panday-connect",
       "passed_strict_validation": true,
-      "archive_sha256": "feeade7cd148444523f1222f388cf0681509a06ad6665cb26db0bbe3d51053fb",
-      "archive_bytes": 10726,
-      "files": 15,
-      "unpacked_bytes": 17120
+      "archive_sha256": "b03047ac2febcdf6cd96af46fa01d7db1e8463c902dab497005938fdb8bcb16a",
+      "archive_bytes": 13691,
+      "files": 16,
+      "unpacked_bytes": 22009
     },
     {
       "skill": "panday-create",
       "passed_strict_validation": true,
-      "archive_sha256": "f8409f3266d5027d41d92e697c4d0d359e208c2c669ceacb020217ece28ef62c",
-      "archive_bytes": 19249,
-      "files": 15,
-      "unpacked_bytes": 44473
+      "archive_sha256": "1b36dde4dfef28d432f2d44b8c982d1c54f4830db0873409147b725285a5862e",
+      "archive_bytes": 21223,
+      "files": 16,
+      "unpacked_bytes": 47984
     },
     {
       "skill": "panday-discover",
       "passed_strict_validation": true,
-      "archive_sha256": "a9840937ff24246c730e26f4c9c4884d84d6c230eb2909fe006b1b2fc277cadc",
-      "archive_bytes": 48862,
-      "files": 31,
-      "unpacked_bytes": 104234
+      "archive_sha256": "eb4f0213c6fbea5fe48c8fa7c0fb7501501f6e66982b4b486c24454a33a080a6",
+      "archive_bytes": 51220,
+      "files": 32,
+      "unpacked_bytes": 108223
     },
     {
       "skill": "panday-evaluate",
       "passed_strict_validation": true,
-      "archive_sha256": "00caa914ac3a3068841b2efd41e01716bc12eadfad7461fc67c87dc3ec6a1d05",
-      "archive_bytes": 17408,
-      "files": 17,
-      "unpacked_bytes": 32567
+      "archive_sha256": "9bf32c7c74f38c4d08338a680ed20247cbb19f5e49026f1255c611a20994dafa",
+      "archive_bytes": 19975,
+      "files": 18,
+      "unpacked_bytes": 36804
     },
     {
       "skill": "panday-fix",
       "passed_strict_validation": true,
-      "archive_sha256": "6c2490620d7d2e3cb6cb029946c6756d878870e07358a282bfdb87850bd814b3",
-      "archive_bytes": 12704,
-      "files": 14,
-      "unpacked_bytes": 21629
+      "archive_sha256": "f161e579a81a85db11caa3563c329357c8d5f33f106ec265867deda4f8ba8c27",
+      "archive_bytes": 14148,
+      "files": 15,
+      "unpacked_bytes": 24818
     },
     {
       "skill": "panday-inspect",
       "passed_strict_validation": true,
-      "archive_sha256": "5196528a28ee6387c9c424f2d3a8c7698766dbc7770e32e11dae13355719215c",
-      "archive_bytes": 15254,
-      "files": 16,
-      "unpacked_bytes": 25057
+      "archive_sha256": "1113d55cab447e2b2384f5a752a3665a86adefecfc63216b3e945bb094a6aded",
+      "archive_bytes": 16415,
+      "files": 17,
+      "unpacked_bytes": 27919
     },
     {
       "skill": "panday-install",
       "passed_strict_validation": true,
-      "archive_sha256": "ed5a65d043bb36d3969f671f0ad28b3eddfbc49e737740ae94962058afbbe03d",
-      "archive_bytes": 16264,
-      "files": 25,
-      "unpacked_bytes": 24736
+      "archive_sha256": "3d0b27ba46cb88b29640e590edbf789fe848e1b55117b9e8694f188090489fea",
+      "archive_bytes": 18008,
+      "files": 26,
+      "unpacked_bytes": 28032
     },
     {
       "skill": "panday-migrate",
       "passed_strict_validation": true,
-      "archive_sha256": "a66aa97d703b41fed970c50cdadb5ad965e25adfc535208dd7c8d398bc7a2529",
-      "archive_bytes": 14734,
-      "files": 19,
-      "unpacked_bytes": 25682
+      "archive_sha256": "329d01016a9fe1c857e8880f5f1f49bd107b1889288322c39def2ae2f759b7e4",
+      "archive_bytes": 16571,
+      "files": 20,
+      "unpacked_bytes": 29241
     },
     {
       "skill": "panday-optimize",
       "passed_strict_validation": true,
-      "archive_sha256": "86617997fc3b668218cf0907ed1a129c3c26b2c6bf63b2e7d083ce27848b5cb0",
-      "archive_bytes": 14454,
-      "files": 16,
-      "unpacked_bytes": 24346
+      "archive_sha256": "eb817dcfdca0aae7920f250965d8a09b5de82996368583792aa83e29980160f1",
+      "archive_bytes": 16462,
+      "files": 17,
+      "unpacked_bytes": 27919
     },
     {
       "skill": "panday-synthesize",
       "passed_strict_validation": true,
-      "archive_sha256": "607ebf37facdbb4357ee4510407a8016460f865bd379c38ac419cbb1859518d0",
-      "archive_bytes": 11563,
-      "files": 15,
-      "unpacked_bytes": 18113
+      "archive_sha256": "5f28d3f5f3e04930bd2c746affd18f593baef5bade1ae4a6963b7ea85161e45e",
+      "archive_bytes": 12970,
+      "files": 16,
+      "unpacked_bytes": 21065
     }
   ]
 }
