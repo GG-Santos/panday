@@ -8,7 +8,7 @@ You finally get your AI assistant to produce the report, review, or summary you 
 
 **12 focused skills. Use one when you need it, or combine them into a workflow.**
 
-[Get started](#get-started) · [Choose a skill](#choose-the-right-skill) · [Explore all 12](#the-12-panday-skills) · [Questions](#frequently-asked-questions) · [Download](https://github.com/GG-Santos/panday/releases/latest)
+[Install Panday](#install-panday) · [Choose a skill](#choose-the-right-skill) · [Explore all 12](#the-12-panday-skills) · [Questions](#frequently-asked-questions) · [Download](https://github.com/GG-Santos/panday/releases/latest)
 
 ## Project description
 
